@@ -1,3 +1,6 @@
+import tailwindTypography from '@tailwindcss/typography'
+import daisyui from 'daisyui'
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: [
@@ -11,6 +14,11 @@ export default defineNuxtConfig({
       Inter: true,
       Poppins: true,
       FiraMono: true,
+    },
+  },
+  tailwindcss: {
+    config: {
+      plugins: [tailwindTypography, daisyui],
     },
   },
   typescript: { strict: true },
